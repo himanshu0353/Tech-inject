@@ -7,8 +7,11 @@ from .seed import seed_database
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    Base.metadata.create_all(bind=engine)
-    seed_database()
+    try:
+        Base.metadata.create_all(bind=engine)
+        seed_database()
+    except Exception as e:
+        print(f"Database initialization notice on startup: {e}")
     yield
 
 app = FastAPI(
@@ -18,10 +21,16 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Enable CORS for React Frontend (running on localhost:5173 or localhost:3000)
+# Enable CORS for React Frontend (supports local dev & Vercel deployments)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+        "https://tech-inject.vercel.app",
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
