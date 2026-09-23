@@ -1,6 +1,9 @@
 const getApiBaseUrl = () => {
-  if (typeof window !== 'undefined' && window.location && window.location.hostname) {
-    return `${window.location.protocol}//${window.location.hostname}:8000/api`;
+  if (typeof window !== 'undefined' && window.location) {
+    if (window.location.port === '5173' || window.location.port === '3000') {
+      return `${window.location.protocol}//${window.location.hostname}:8000/api`;
+    }
+    return `${window.location.origin}/api`;
   }
   return 'http://127.0.0.1:8000/api';
 };
