@@ -1,0 +1,11 @@
+{
+  "name": "tech-inject",
+  "version": "1.0.0",
+  "description": "Tech Inject Design Library CLI component installer",
+  "main": "index.js",
+  "bin": {
+    "tech-inject": "./index.js"
+  },
+  "type": "module",
+  "dependencies": {}
+}

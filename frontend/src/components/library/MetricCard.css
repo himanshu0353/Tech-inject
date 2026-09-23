@@ -1,0 +1,61 @@
+.tech-metric-card {
+  padding: 16px 20px;
+  background-color: var(--bg-card, #131b2e);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-lg, 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tech-metric-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-metric-card__label {
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted, #94a3b8);
+}
+
+.tech-metric-card__icon {
+  color: var(--primary, #3b82f6);
+}
+
+.tech-metric-card__body {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.tech-metric-card__value {
+  font-size: var(--font-2xl, 1.5rem);
+  font-weight: 700;
+  color: var(--text-main, #f8fafc);
+  letter-spacing: -0.02em;
+}
+
+.tech-metric-card__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+}
+
+.tech-metric-card__trend--up {
+  color: var(--success-text, #34d399);
+}
+
+.tech-metric-card__trend--down {
+  color: var(--danger-text, #f87171);
+}
+
+.tech-metric-card__desc {
+  font-size: var(--font-xs, 0.75rem);
+  color: var(--text-subtle, #64748b);
+}

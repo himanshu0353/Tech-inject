@@ -1,0 +1,180 @@
+.tech-login {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.tech-login__card {
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--bg-card, #131b2e);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-xl, 12px);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+.tech-login__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tech-login__logo {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md, 6px);
+  background: linear-gradient(135deg, var(--primary, #3b82f6), #1d4ed8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.tech-login__header h2 {
+  font-size: var(--font-2xl, 1.5rem);
+  font-weight: 700;
+  color: var(--text-main, #f8fafc);
+  margin-bottom: 4px;
+}
+
+.tech-login__header p {
+  font-size: var(--font-sm, 0.875rem);
+  color: var(--text-muted, #94a3b8);
+}
+
+.tech-login__error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: var(--danger-bg, rgba(239, 68, 68, 0.15));
+  border: 1px solid var(--danger-border, rgba(239, 68, 68, 0.3));
+  border-radius: var(--radius-md, 6px);
+  color: var(--danger-text, #f87171);
+  font-size: var(--font-xs, 0.75rem);
+  margin-bottom: 20px;
+}
+
+.tech-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.tech-login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tech-login__field label {
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+  color: var(--text-muted, #94a3b8);
+}
+
+.tech-login__field input {
+  padding: 10px 14px;
+  background-color: var(--bg-surface, #111827);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-md, 6px);
+  color: var(--text-main, #f8fafc);
+  font-size: var(--font-sm, 0.875rem);
+  outline: none;
+}
+
+.tech-login__field input:focus {
+  border-color: var(--primary, #3b82f6);
+}
+
+.tech-login__btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--primary, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md, 6px);
+  font-weight: 600;
+  font-size: var(--font-sm, 0.875rem);
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-login__btn-submit:hover:not(:disabled) {
+  background-color: var(--primary-hover, #2563eb);
+}
+
+.tech-login__demo-box {
+  border-top: 1px solid var(--border-subtle, #1e293b);
+  padding-top: 20px;
+}
+
+.tech-login__demo-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+  color: var(--text-subtle, #64748b);
+  margin-bottom: 10px;
+}
+
+.tech-login__demo-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tech-login__demo-btn {
+  padding: 6px 12px;
+  background-color: var(--bg-surface, #111827);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-sm, 4px);
+  color: var(--text-muted, #94a3b8);
+  font-size: var(--font-xs, 0.75rem);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-login__mode-tabs {
+  display: flex;
+  background-color: var(--bg-surface, #111827);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-md, 6px);
+  padding: 4px;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.tech-login__mode-tab {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #94a3b8);
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+  border-radius: var(--radius-sm, 4px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-login__mode-tab--active {
+  background-color: var(--primary, #3b82f6);
+  color: white;
+}
+
+.tech-login__demo-btn:hover {
+  background-color: var(--bg-surface-hover, #1f2937);
+  color: var(--text-main, #f8fafc);
+  border-color: var(--border-medium, #334155);
+}

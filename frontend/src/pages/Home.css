@@ -1,0 +1,191 @@
+.tech-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.tech-home__hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.tech-home__hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full, 9999px);
+  background-color: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--primary, #3b82f6);
+  font-size: var(--font-xs, 0.75rem);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.tech-home__hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main, #f8fafc);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.tech-home__hero-highlight {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-home__hero-sub {
+  font-size: var(--font-lg, 1.125rem);
+  color: var(--text-muted, #94a3b8);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.tech-home__hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tech-home__btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md, 6px);
+  background-color: var(--primary, #3b82f6);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-home__btn-primary:hover {
+  background-color: var(--primary-hover, #2563eb);
+  text-decoration: none;
+}
+
+.tech-home__btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: var(--radius-md, 6px);
+  background-color: var(--bg-surface, #111827);
+  border: 1px solid var(--border-subtle, #1e293b);
+  color: var(--text-main, #f8fafc);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-home__btn-secondary:hover {
+  background-color: var(--bg-surface-hover, #1f2937);
+  text-decoration: none;
+}
+
+.tech-home__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.tech-home__feature-card {
+  background-color: var(--bg-card, #131b2e);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-lg, 8px);
+  padding: 24px;
+}
+
+.tech-home__feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md, 6px);
+  background-color: var(--primary-light, rgba(59, 130, 246, 0.12));
+  color: var(--primary, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.tech-home__feature-card h3 {
+  font-size: var(--font-lg, 1.125rem);
+  font-weight: 700;
+  color: var(--text-main, #f8fafc);
+  margin-bottom: 8px;
+}
+
+.tech-home__feature-card p {
+  font-size: var(--font-sm, 0.875rem);
+  color: var(--text-muted, #94a3b8);
+  line-height: 1.5;
+}
+
+.tech-home__guide {
+  background-color: var(--bg-surface, #111827);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-xl, 12px);
+  padding: 36px;
+}
+
+.tech-home__section-title {
+  font-size: var(--font-2xl, 1.5rem);
+  font-weight: 700;
+  color: var(--text-main, #f8fafc);
+  margin-bottom: 24px;
+}
+
+.tech-home__guide-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tech-home__step {
+  display: flex;
+  gap: 16px;
+}
+
+.tech-home__step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary, #3b82f6);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tech-home__step-content h4 {
+  font-size: var(--font-base, 1rem);
+  font-weight: 600;
+  color: var(--text-main, #f8fafc);
+  margin-bottom: 4px;
+}
+
+.tech-home__step-content p {
+  font-size: var(--font-sm, 0.875rem);
+  color: var(--text-muted, #94a3b8);
+}
+
+.tech-home__code {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: var(--bg-app, #090d16);
+  border: 1px solid var(--border-subtle, #1e293b);
+  border-radius: var(--radius-md, 6px);
+  font-family: var(--font-mono);
+  font-size: var(--font-xs, 0.75rem);
+  color: var(--primary, #3b82f6);
+  display: inline-block;
+}

@@ -1,0 +1,43 @@
+.tech-tabs {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--bg-surface, #111827);
+  padding: 3px;
+  border-radius: var(--radius-md, 6px);
+  border: 1px solid var(--border-subtle, #1e293b);
+}
+
+.tech-tabs__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm, 4px);
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #94a3b8);
+  font-size: var(--font-sm, 0.875rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+}
+
+.tech-tabs__item:hover:not(.tech-tabs__item--active) {
+  color: var(--text-main, #f8fafc);
+  background-color: var(--bg-surface-hover, #1f2937);
+}
+
+.tech-tabs__item--active {
+  background-color: var(--bg-card, #131b2e);
+  color: var(--primary, #3b82f6);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.tech-tabs__count {
+  font-size: var(--font-xs, 0.75rem);
+  padding: 1px 6px;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--bg-surface-hover, #1f2937);
+  color: var(--text-muted, #94a3b8);
+}

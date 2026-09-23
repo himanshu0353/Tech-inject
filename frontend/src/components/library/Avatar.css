@@ -1,0 +1,40 @@
+.tech-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--bg-surface-active, #374151);
+  color: var(--text-main, #f8fafc);
+  font-weight: 600;
+  overflow: hidden;
+  user-select: none;
+  border: 1px solid var(--border-subtle, #1e293b);
+}
+
+.tech-avatar--sm {
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.tech-avatar--md {
+  width: 36px;
+  height: 36px;
+  font-size: var(--font-xs, 0.75rem);
+}
+
+.tech-avatar--lg {
+  width: 48px;
+  height: 48px;
+  font-size: var(--font-sm, 0.875rem);
+}
+
+.tech-avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-avatar__fallback {
+  letter-spacing: 0.5px;
+}

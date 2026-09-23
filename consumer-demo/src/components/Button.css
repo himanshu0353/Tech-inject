@@ -1,0 +1,95 @@
+.tech-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: var(--radius-md, 6px);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease-in-out);
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tech-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--bg-app, #090d16), 0 0 0 4px var(--primary, #3b82f6);
+}
+
+.tech-btn--sm {
+  padding: 4px 10px;
+  font-size: var(--font-xs, 0.75rem);
+  height: 28px;
+}
+
+.tech-btn--md {
+  padding: 6px 14px;
+  font-size: var(--font-sm, 0.875rem);
+  height: 36px;
+}
+
+.tech-btn--lg {
+  padding: 8px 18px;
+  font-size: var(--font-base, 1rem);
+  height: 44px;
+}
+
+.tech-btn--primary {
+  background-color: var(--primary, #3b82f6);
+  color: var(--primary-text, #ffffff);
+}
+
+.tech-btn--primary:hover:not(:disabled) {
+  background-color: var(--primary-hover, #2563eb);
+}
+
+.tech-btn--secondary {
+  background-color: var(--bg-surface, #111827);
+  color: var(--text-main, #f8fafc);
+  border-color: var(--border-subtle, #1e293b);
+}
+
+.tech-btn--secondary:hover:not(:disabled) {
+  background-color: var(--bg-surface-hover, #1f2937);
+  border-color: var(--border-medium, #334155);
+}
+
+.tech-btn--ghost {
+  background-color: transparent;
+  color: var(--text-muted, #94a3b8);
+}
+
+.tech-btn--ghost:hover:not(:disabled) {
+  background-color: var(--bg-surface-hover, #1f2937);
+  color: var(--text-main, #f8fafc);
+}
+
+.tech-btn--danger {
+  background-color: var(--danger-bg, rgba(239, 68, 68, 0.15));
+  color: var(--danger-text, #f87171);
+  border-color: var(--danger-border, rgba(239, 68, 68, 0.3));
+}
+
+.tech-btn--danger:hover:not(:disabled) {
+  background-color: rgba(239, 68, 68, 0.25);
+}
+
+.tech-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tech-btn__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: tech-spin 0.6s linear infinite;
+  margin-right: 6px;
+}
+
+@keyframes tech-spin {
+  to { transform: rotate(360deg); }
+}
