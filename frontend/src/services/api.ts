@@ -1,4 +1,7 @@
 const getApiBaseUrl = () => {
+  if (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL;
+  }
   if (typeof window !== 'undefined' && window.location) {
     if (window.location.port === '5173' || window.location.port === '3000') {
       return `${window.location.protocol}//${window.location.hostname}:8000/api`;
